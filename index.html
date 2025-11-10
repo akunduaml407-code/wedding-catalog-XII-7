@@ -1,314 +1,121 @@
-<!doctype html>
-<html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Katalog Paket Snack – Ahmad Baharudin</title>
-  <meta name="description" content="Katalog Paket Snack Premium Mini Rp5.000 – brand Ahmad Baharudin. Desain elegan, responsif, siap dipesan via WhatsApp dan nyaman di desktop." />
-  <meta property="og:title" content="Katalog Paket Snack – Ahmad Baharudin" />
-  <meta property="og:description" content="Paket Premium Mini Rp5.000: Brownies + Risoles + Air Mineral. Klik untuk pesan via WhatsApp." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://dummyimage.com/1200x630/eee/333&text=Ahmad+Baharudin+Snack" />
-  <meta name="theme-color" content="#0f172a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:hsl(222, 47%, 11%);          /* slate-900 */
-      --card:#0b1224;        /* darker card */
-      --muted:#94a3b8;       /* slate-400 */
-      --text:#e2e8f0;        /* slate-200 */
-      --accent:#c5a572;      /* elegant gold */
-      --accent-2:#f5efe0;    /* soft gold tint */
-      --ring:rgba(197,165,114,.35);
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-      --radius: 18px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; background: radial-gradient(1200px 600px at 80% -10%, rgba(197,165,114,.08), transparent 60%),
-      radial-gradient(800px 600px at -10% 20%, rgba(197,165,114,.06), transparent 60%), var(--bg);
-      color:var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
-      line-height:1.6; -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
-    }
-    a{color:inherit; text-decoration:none}
-    .container{max-width:1100px; margin:0 auto; padding:24px}
 
-    /* Header */
-    header{position:sticky; top:0; z-index:50; backdrop-filter: blur(10px); background: linear-gradient(180deg, rgba(15,23,42,.85), rgba(15,23,42,.6)); border-bottom:1px solid rgba(197,165,114,.15)}
-    .nav{display:flex; align-items:center; justify-content:space-between; gap:16px}
-    .brand{display:flex; align-items:center; gap:14px}
-    .logo{display:grid; place-items:center; inline-size:42px; block-size:42px; border-radius:12px; background:linear-gradient(135deg, var(--accent), #9f8556); color:#0b0f1a; font-weight:800}
-    .brand-text{display:flex; flex-direction:column}
-    .brand-text .title{font-family: "Playfair Display", serif; font-weight:700; letter-spacing:.3px; font-size: clamp(18px, 3vw, 28px)}
-    .brand-text .subtitle{font-size:12px; color:var(--muted); letter-spacing:.6px; text-transform:uppercase}
-    .nav-actions{display:flex; gap:10px; align-items:center}
-    .btn{padding:12px 16px; border-radius:999px; border:1px solid rgba(197,165,114,.35); background:linear-gradient(180deg, rgba(197,165,114,.08), rgba(197,165,114,.02)); color:var(--text); font-weight:600; box-shadow: inset 0 1px 0 rgba(255,255,255,.05); transition:.2s ease}
-    .btn:hover{transform:translateY(-1px); box-shadow: 0 10px 20px rgba(197,165,114,.12)}
-    .btn.primary{background: linear-gradient(180deg, var(--accent), #9f8556); color:#0b0f1a; border:1px solid rgba(255,255,255,.15)}
-    .btn.primary:hover{filter:saturate(1.05); box-shadow: 0 12px 28px rgba(197,165,114,.35)}
 
-    /* Hero */
-    .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; padding:42px 24px}
-    .headline{font-family:"Playfair Display",serif; font-weight:700; font-size: clamp(28px, 5.5vw, 56px); line-height:1.1; letter-spacing:.2px}
-    .lead{color:var(--muted); font-size:clamp(14px,2.2vw,18px)}
-    .hero-card{background:linear-gradient(180deg, rgba(192,169,124,.08), rgba(192,169,124,.02)); border:1px solid rgba(197,165,114,.22); border-radius: var(--radius); padding:22px; box-shadow:var(--shadow)}
-    .hero-grid{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px}
-    .hero-item{background: #0c1326; border:1px solid rgba(197,165,114,.18); border-radius:14px; padding:16px}
-    .hero-item h4{margin:0 0 6px; font-size:14px; color:var(--accent)}
-    .hero-item p{margin:0; font-size:13px; color:var(--text)}
 
-    /* Product Card */
-    .section{padding:16px 24px 64px}
-    .section h2{font-family:"Playfair Display",serif; font-weight:700; font-size: clamp(22px, 4vw, 34px); margin:0 0 14px}
-    .muted{color:var(--muted)}
+  <!-- ===== KONTEN PEMESANAN ===== -->
+  <main class="section container" id="pesan" style="padding:40px 20px; max-width:1000px; margin:auto;">
+    <h2 style="font-family:'Playfair Display',serif; text-align:center; font-size:clamp(22px,4vw,34px); color:#c5a572; margin:0 0 8px;">Katalog & Pemesanan</h2>
+    <p class="muted" style="color:#94a3b8;text-align:center;font-size:clamp(13px,2vw,15px);margin-bottom:20px;">
+      Silakan atur varian, jumlah box, dan detail acara. Klik <em>Pesan via WhatsApp</em> untuk mengirim permintaan otomatis.
+    </p>
 
-    .grid{display:grid; grid-template-columns: repeat(12, 1fr); gap:20px}
-    .card{grid-column: span 12; background:linear-gradient(180deg, rgba(192,169,124,.07), rgba(192,169,124,.015)); border:1px solid rgba(197,165,114,.2); border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow)}
-    .card-inner{display:grid; grid-template-columns: 1fr 1fr; gap:0}
-    .media{position:relative; min-height:260px; background: radial-gradient(120% 120% at 70% 20%, rgba(197,165,114,.2), rgba(15,23,42,1)), url('https://images.unsplash.com/photo-1551024709-8f23befc6cf7?q=80&w=1280&auto=format&fit=crop'); background-size:cover; background-position:center}
-    .media::after{content:""; position:absolute; inset:0; background:linear-gradient(45deg, rgba(15,23,42,.7), transparent 60%)}
-    .badge{position:absolute; top:16px; left:16px; background: var(--accent); color:#0b0f1a; font-weight:800; letter-spacing:.5px; border-radius:999px; padding:8px 12px; font-size:12px}
-
-    .details{padding:26px}
-    .title-row{display:flex; align-items:center; justify-content:space-between; gap:12px}
-    .product-title{font-size: clamp(18px, 3vw, 26px); margin:0; letter-spacing:.2px}
-    .price{font-weight:800; color:var(--accent); font-size: clamp(18px, 3vw, 24px)}
-
-    .ul{margin:14px 0; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:8px}
-    .chip{display:flex; align-items:center; gap:8px; padding:10px 12px; border-radius:999px; border:1px dashed rgba(197,165,114,.25); background: rgba(12,19,38,.7)}
-
-    .form{margin-top:10px; display:grid; grid-template-columns: repeat(6, 1fr); gap:12px}
-    .field{grid-column: span 6}
-    .field.half{grid-column: span 3}
-    label{display:block; font-size:12px; color:var(--muted); margin-bottom:6px}
-    input, select, textarea{
-      width:100%; padding:12px 14px; border-radius:12px; border:1px solid rgba(197,165,114,.25); background:#0c1326; color:var(--text);
-      outline:none; transition:.15s ease; box-shadow: inset 0 1px 0 rgba(255,255,255,.03)
-    }
-    input:focus, select:focus, textarea:focus{border-color: var(--accent); box-shadow: 0 0 0 4px var(--ring)}
-    .actions{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
-
-    .btn.whatsapp{display:inline-flex; align-items:center; gap:10px}
-    .btn.whatsapp svg{inline-size:18px; block-size:18px}
-
-    /* Info / FAQ */
-    .info{margin-top:24px; display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
-    .info .ibox{background:#0c1326; border:1px solid rgba(197,165,114,.18); border-radius:14px; padding:14px}
-    .ibox h4{margin:0 0 6px; color:var(--accent); font-size:14px}
-    .ibox p{margin:0; font-size:13px; color:var(--text)}
-
-    /* Footer */
-    footer{border-top:1px solid rgba(197,165,114,.2); background:linear-gradient(180deg, rgba(197,165,114,.05), rgba(197,165,114,.01)); margin-top:60px}
-    .footer-grid{display:grid; grid-template-columns: 1fr auto; gap:20px; align-items:center; padding:24px}
-    .copyright{color:var(--muted); font-size:13px}
-    .social{display:flex; gap:10px}
-
-    /* Responsive */
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr; gap:18px}
-      .card-inner{grid-template-columns:1fr}
-      .info{grid-template-columns:1fr}
-      .ul{grid-template-columns:1fr}
-      .field.half{grid-column: span 6}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <div class="brand">
-        <div class="logo">AB</div>
-        <div class="brand-text">
-          <div class="title">Ahmad Baharudin</div>
-          <div class="subtitle">Elegant Snack & Wedding Favors</div>
-        </div>
-      </div>
-      <div class="nav-actions">
-        <a href="#pesan" class="btn">Lihat Paket</a>
-        <a id="ctaWAHeader" class="btn primary" href="#">Pesan via WhatsApp</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="container hero">
-    <div>
-      <h1 class="headline">Paket Snack <span style="color:var(--accent)">Premium Mini</span> Rp5.000</h1>
-      <p class="lead">Kombinasi manis & gurih yang elegan: <strong>Brownies potong</strong>, <strong>Risoles mayo</strong>, dan <strong>Air mineral</strong>. Desain kemasan minimalis dengan sentuhan emas, cocok untuk pernikahan, akad, atau resepsi modern.</p>
-      <div class="hero-card" role="region" aria-label="Kelebihan Paket">
-        <div class="hero-grid">
-          <div class="hero-item">
-            <h4>Elegan & Rapi</h4>
-            <p>Kotak putih/mika tebal + stiker inisial pengantin.</p>
-          </div>
-          <div class="hero-item">
-            <h4>Ekonomis</h4>
-            <p>Harga hemat Rp5.000 per box, tetap premium.</p>
-          </div>
-          <div class="hero-item">
-            <h4>Higienis</h4>
-            <p>Proses packing bersarung tangan & segel.</p>
-          </div>
-          <div class="hero-item">
-            <h4>Mudah Dipesan</h4>
-            <p>Klik, isi data, lalu pesan via WhatsApp.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-img">
-      <div class="hero-card" style="padding:0; overflow:hidden">
-        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=1200&auto=format&fit=crop" alt="Ilustrasi snack elegan" style="display:block; width:100%; height:100%; object-fit:cover; aspect-ratio: 16/12;"/>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== VENDOR ===== -->
-<section id="vendor" style="background:hsl#0c1326; padding:60px 0; color:#1e293b; font-family:'Inter',sans-serif;">
-  <div style="max-width:1100px; margin:0 auto; padding:0 20px;">
-    <h2 style="text-align:center; font-family:'Playfair Display',serif; color:#c5a572; font-size:32px; margin-bottom:8px;">Daftar Menu</h2>
-    <p style="text-align:center; color:#64748b; margin-bottom:40px;">Dipilih berdasarkan ulasan dan kualitas terbaik.</p>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px;">
+    <article class="card" style="
+      background:linear-gradient(180deg,rgba(192,169,124,.07),rgba(192,169,124,.015));
+      border:1px solid rgba(197,165,114,.2);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.3);
+      ">
       
-      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,.1); background:#f8fafc;">
-        <img src="https://www.einfachbacken.de/sites/einfachbacken.de/files/styles/full_width_tablet_4_3/public/2018-07/brownies-1_zuschnitt_bearb-png-converted.jpg?h=7cece4cc&itok=pTw_-eP7" alt="Dekorasi" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:16px;">
-          <span style="display:inline-block; background:#c5a572; color:#fff; font-weight:600; font-size:12px; border-radius:999px; padding:4px 10px; margin-bottom:8px;">Catering</span>
-          <h3 style="margin:0; color:#0f172a; font-size:18px; font-weight:700;">Chocolatey Brownies</h3>
-          <p style="color:#64748b; font-size:14px; margin-top:4px;">★ 4.9 | Klego </p>
+      <div class="card-inner" style="display:grid; grid-template-columns:1fr 1fr;">
+        <!-- GAMBAR PRODUK -->
+        <div class="media" style="
+          position:relative;
+          background:url('https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+          min-height:280px;">
+          <span class="badge" style="
+            position:absolute;top:16px;left:16px;
+            background:#c5a572;color:#0b0f1a;
+            padding:6px 12px;font-size:12px;
+            font-weight:700;border-radius:999px;">Best Seller</span>
         </div>
-      </div>
 
-      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,.1); background:#f8fafc;">
-        <img src="https://cdn.idntimes.com/content-images/community/2022/07/tips-membuat-risol-mayo-resep-risol-mayo-cara-membuat-kulit-risol-tips-mayonais-tidak-hilang-tips-mayonais-lumer-risol-mayo-simpel-9cde86371d7fc78c91ae80a6ffab250e-f6ce8413b01479537d09f73df91c3703.jpg" alt="Catering" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:16px;">
-          <span style="display:inline-block; background:#c5a572; color:#fff; font-weight:600; font-size:12px; border-radius:999px; padding:4px 10px; margin-bottom:8px;">Catering</span>
-          <h3 style="margin:0; color:#0f172a; font-size:18px; font-weight:700;">Risol Mayo Original</h3>
-          <p style="color:#64748b; font-size:14px; margin-top:4px;">★ 4.8 | Klego</p>
-        </div>
-      </div>
-
-       <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,.1); background:#f8fafc;">
-        <img src="https://i0.wp.com/www.jumanto.com/wp-content/uploads/2020/01/1-gelas-aqua-ukuran-240-ml.png?resize=801%2C465&ssl=1" alt="Dekorasi" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:16px;">
-          <span style="display:inline-block; background:#c5a572; color:#fff; font-weight:600; font-size:12px; border-radius:999px; padding:4px 10px; margin-bottom:8px;">Catering</span>
-          <h3 style="margin:0; color:#0f172a; font-size:18px; font-weight:700;">Air Mineral Aqua</h3>
-          <p style="color:#64748b; font-size:14px; margin-top:4px;">★ 4.9 | Klego</p>
-        </div>
-      </div>
- 
-      <div style="border-radius:16px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,.1); background:#f8fafc;">
-        <img src="https://tse1.mm.bing.net/th/id/OIP.hGnnrwFlq_H0JKdMOe4xiwAAAA?cb=ucfimgc2&w=474&h=474&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Catering" style="width:100%; height:220px; object-fit:cover;">
-        <div style="padding:16px;">
-          <span style="display:inline-block; background:#c5a572; color:#fff; font-weight:600; font-size:12px; border-radius:999px; padding:4px 10px; margin-bottom:8px;">Catering</span>
-          <h3 style="margin:0; color:#0f172a; font-size:18px; font-weight:700;">Stiker Wedding </h3>
-          <p style="color:#64748b; font-size:14px; margin-top:4px;">★ 4.9 | Klego</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-  <main class="section container" id="pesan">
-    <h2>Katalog & Pemesanan</h2>
-    <p class="muted">Silakan atur varian, jumlah box, dan detail acara. Klik <em>Pesan via WhatsApp</em> untuk mengirim permintaan otomatis.</p>
-
-    <article class="card" aria-labelledby="paket-title">
-      <div class="card-inner">
-        <div class="media" aria-hidden="true">
-          <span class="badge">Best Seller</span>
-        </div>
-        <div class="details">
-          <div class="title-row">
-            <h3 id="paket-title" class="product-title">Paket Premium Mini</h3>
-            <div class="price">Rp5.000/box</div>
+        <!-- DETAIL PRODUK -->
+        <div class="details" style="padding:24px;">
+          <div class="title-row" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+            <h3 id="paket-title" style="margin:0;font-size:clamp(18px,3vw,26px);font-weight:700;">Paket Premium Mini</h3>
+            <div class="price" style="color:#c5a572;font-weight:700;font-size:clamp(16px,2.5vw,22px);">Rp5.000/box</div>
           </div>
 
-          <div class="ul" aria-label="Komponen paket">
-            <div class="chip">🍫 Chocolatey Brownies</div>
-            <div class="chip">🥟 Risol Mayo Original</div>
-            <div class="chip">💧 Air Mineral Aqua</div>
-            <div class="chip">🎀 Stiker Wedding</div>
+          <div class="ul" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin:14px 0;">
+            <div class="chip" style="background:rgba(12,19,38,.7);border:1px dashed rgba(197,165,114,.25);border-radius:999px;padding:8px 12px;font-size:13px;text-align:center;">🍫 Chocolatey Brownies</div>
+            <div class="chip" style="background:rgba(12,19,38,.7);border:1px dashed rgba(197,165,114,.25);border-radius:999px;padding:8px 12px;font-size:13px;text-align:center;">🥟 Risol Mayo Original</div>
+            <div class="chip" style="background:rgba(12,19,38,.7);border:1px dashed rgba(197,165,114,.25);border-radius:999px;padding:8px 12px;font-size:13px;text-align:center;">💧 Air Mineral Aqua</div>
+            <div class="chip" style="background:rgba(12,19,38,.7);border:1px dashed rgba(197,165,114,.25);border-radius:999px;padding:8px 12px;font-size:13px;text-align:center;">🎀 Stiker Wedding</div>
           </div>
 
-          <form class="form" id="orderForm" onsubmit="return false" aria-describedby="form-help">
-            <div class="field half">
-              <label for="varianManis">Varian kue manis</label>
-              <select id="varianManis" name="varianManis" aria-label="Pilih varian kue manis">
+          <!-- FORM -->
+          <form class="form" style="display:grid;grid-template-columns:repeat(6,1fr);gap:12px;">
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Varian kue manis</label>
+              <select style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
                 <option>Brownies potong</option>
                 <option>Muffin mini</option>
                 <option>Chiffon potong</option>
               </select>
             </div>
-            <div class="field half">
-              <label for="varianGurih">Varian kue gurih</label>
-              <select id="varianGurih" name="varianGurih" aria-label="Pilih varian kue gurih">
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Varian kue gurih</label>
+              <select style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
                 <option>Risoles mayo</option>
                 <option>Risoles sayur</option>
                 <option>Pastel mini isi ayam</option>
               </select>
             </div>
-
-            <div class="field half">
-              <label for="minuman">Minuman</label>
-              <select id="minuman" name="minuman" aria-label="Pilih minuman">
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Minuman</label>
+              <select style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
                 <option>Air mineral 220ml</option>
                 <option>Teh manis cup</option>
               </select>
             </div>
-            <div class="field half">
-              <label for="jumlah">Jumlah box</label>
-              <input type="number" id="jumlah" name="jumlah" placeholder="cth: 200" min="50" value="100" required />
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Jumlah box</label>
+              <input type="number" placeholder="cth: 200" min="50" value="100" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
+            </div>
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Nama pengantin / acara</label>
+              <input type="text" placeholder="R & M Wedding" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
+            </div>
+            <div class="field half" style="grid-column:span 3;">
+              <label style="font-size:13px;color:#94a3b8;">Tanggal acara</label>
+              <input type="date" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;">
+            </div>
+            <div class="field" style="grid-column:span 6;">
+              <label style="font-size:13px;color:#94a3b8;">Catatan tambahan</label>
+              <textarea rows="3" placeholder="Warna stiker emas, pengambilan H-1, dll." style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(197,165,114,.25);background:#0c1326;color:#e2e8f0;"></textarea>
             </div>
 
-            <div class="field half">
-              <label for="namaPengantin">Nama pengantin / acara</label>
-              <input type="text" id="namaPengantin" name="namaPengantin" placeholder="R & M Wedding" />
-            </div>
-            <div class="field half">
-              <label for="tanggalAcara">Tanggal acara</label>
-              <input type="date" id="tanggalAcara" name="tanggalAcara" />
-            </div>
-
-            <div class="field">
-              <label for="catatan">Catatan tambahan (opsional)</label>
-              <textarea id="catatan" name="catatan" rows="3" placeholder="Warna stiker emas, pengambilan H-1, dll."></textarea>
-            </div>
-
-            <p id="form-help" class="muted" style="margin:0 0 8px">Minimal order 50 box. Estimasi produksi 1–2 hari kerja tergantung jumlah.</p>
-
-            <div class="actions">
-              <a id="btnWA" class="btn primary whatsapp" href="#" target="_blank" rel="noopener" aria-label="Pesan via WhatsApp">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="wa.me//6285727574271" aria-hidden="true"><path d="M20.52 3.48A11.94 11.94 0 0 0 12.015 0C5.404 0 .047 5.357.047 11.969c0 2.107.552 4.169 1.6 5.978L0 24l6.2-1.62a11.94 11.94 0 0 0 5.815 1.562h.005c6.61 0 11.968-5.357 11.968-11.969A11.9 11.9 0 0 0 20.52 3.48Zm-8.5 18.4h-.004a9.77 9.77 0 0 1-4.98-1.36l-.357-.212-3.677.962.982-3.585-.232-.368a9.79 9.79 0 0 1-1.512-5.22c0-5.41 4.402-9.813 9.814-9.813a9.733 9.733 0 0 1 6.914 2.864 9.73 9.73 0 0 1 2.86 6.95c0 5.41-4.402 9.814-9.81 9.814ZM17.2 14.1c-.27-.135-1.59-.783-1.84-.873-.25-.093-.433-.135-.618.135-.18.27-.71.872-.87 1.05-.16.181-.32.202-.59.068-.27-.135-1.14-.42-2.173-1.344-.802-.714-1.343-1.597-1.5-1.867-.16-.27-.017-.414.118-.55.12-.12.27-.314.41-.47.14-.16.18-.27.27-.45.096-.18.05-.338-.02-.473-.07-.135-.62-1.49-.85-2.04-.22-.527-.44-.457-.62-.466l-.53-.01c-.18 0-.47.068-.72.338-.25.27-.95.93-.95 2.26 0 1.33.97 2.62 1.11 2.81.14.18 1.9 2.9 4.6 4.06.64.276 1.14.44 1.53.56.64.204 1.22.175 1.68.106.51-.076 1.59-.65 1.82-1.274.22-.624.22-1.159.16-1.274-.06-.116-.24-.18-.51-.315Z" fill="#0b0f1a"/></svg>
-                Pesan via WhatsApp
-              </a>
-              <button class="btn" type="button" id="btnShare">Bagikan Katalog</button>
-              <button class="btn" type="button" id="btnPrint">Cetak</button>
+            <div class="actions" style="display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;">
+              <a href="#" style="flex:1;text-align:center;text-decoration:none;padding:12px;border-radius:999px;background:linear-gradient(180deg,#c5a572,#9f8556);color:#0b0f1a;font-weight:700;">Pesan via WhatsApp</a>
+              <button type="button" style="flex:1;background:#1e293b;color:#e2e8f0;border:none;padding:12px;border-radius:999px;font-weight:600;">Bagikan</button>
             </div>
           </form>
-
-          <div class="info" style="margin-top:18px">
-            <div class="ibox">
-              <h4>Kemasan</h4>
-              <p>Kotak snack putih 10×10×6 cm / mika tebal, stiker inisial (emas).</p>
-            </div>
-            <div class="ibox">
-              <h4>Pengiriman</h4>
-              <p>Ambil di tempat atau delivery (ongkir menyesuaikan jarak).</p>
-            </div>
-            <div class="ibox">
-              <h4>Penyimpanan</h4>
-              <p>Baik disajikan ≤ 6 jam setelah diterima. Simpan di ruang sejuk.</p>
-            </div>
-          </div>
         </div>
       </div>
     </article>
   </main>
+
+  <!-- FOOTER -->
+  <footer style="text-align:center;color:#94a3b8;padding:24px;font-size:13px;border-top:1px solid rgba(197,165,114,.25);">
+    © <span id="year"></span> Ahmad Baharudin. Desain elegan responsif.
+  </footer>
+
+  <script>
+    // Tahun otomatis
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Responsif: ubah jadi 1 kolom di HP
+    const mq = window.matchMedia("(max-width: 768px)");
+    function adjustLayout() {
+      const cardInner = document.querySelector(".card-inner");
+      if (mq.matches) cardInner.style.gridTemplateColumns = "1fr";
+      else cardInner.style.gridTemplateColumns = "1fr 1fr";
+    }
+    adjustLayout();
+    mq.addEventListener("change", adjustLayout);
+  </script>
+</body>
+
 
   <footer>
     <div class="container footer-grid">
