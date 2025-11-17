@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Catalog Wedding - [Nama Brand]</title>
+  <title>Catalog Wedding - XII-7</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root {
@@ -43,7 +43,6 @@
       color: inherit;
     }
 
-    /* ===== LAYOUT UTAMA ===== */
     .container {
       width: 100%;
       max-width: 960px;
@@ -190,7 +189,7 @@
     }
 
     main {
-      padding-top: 76px; /* offset header */
+      padding-top: 76px;
     }
 
     /* ===== HERO / BANNER ===== */
@@ -205,16 +204,26 @@
       box-shadow: var(--shadow);
       display: grid;
       gap: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
     }
 
     .hero-text h1 {
-      font-size: 1.55rem;
+      font-size: 1.7rem;
       margin-bottom: 6px;
+      letter-spacing: 0.03em;
     }
 
     .hero-text p {
       font-size: 0.9rem;
       color: var(--muted);
+    }
+
+    .hero-subtext {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-top: 10px;
+      color: #5a4c4c;
     }
 
     .hero-pill {
@@ -232,7 +241,30 @@
     .hero-ctas {
       display: flex;
       gap: 10px;
-      margin-top: 12px;
+      margin-top: 14px;
+    }
+
+    .hero-meta {
+      display: flex;
+      gap: 14px;
+      margin-top: 14px;
+      font-size: 0.78rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .hero-meta-item strong {
+      font-size: 0.9rem;
+    }
+
+    .hero-meta-item span {
+      color: var(--muted);
+      font-size: 0.74rem;
     }
 
     .btn-primary {
@@ -286,7 +318,7 @@
           rgba(233, 183, 197, 0.6),
           rgba(248, 244, 239, 0.9)
         ),
-        url("https://via.placeholder.com/800x600?text=Foto+Wedding+Elegan");
+        url("https://via.placeholder.com/800x600?text=Foto+Wedding+Profesional");
       background-size: cover;
       background-position: center;
     }
@@ -461,12 +493,6 @@
       padding: 8px 10px 10px;
     }
 
-    .price {
-      font-size: 0.8rem;
-      color: var(--primary-dark);
-      margin-top: 3px;
-    }
-
     .pill-row {
       display: flex;
       gap: 6px;
@@ -517,11 +543,6 @@
     .paket-name {
       font-weight: 600;
       font-size: 0.95rem;
-    }
-
-    .paket-price {
-      font-size: 0.85rem;
-      color: var(--primary-dark);
     }
 
     .paket-items {
@@ -720,7 +741,6 @@
       transform: translateY(-2px);
     }
 
-    /* ===== DESKTOP SEDIKIT RESPONSIVE ===== */
     @media (min-width: 768px) {
       .hero-card {
         grid-template-columns: 1.2fr 1fr;
@@ -774,25 +794,42 @@
       <div class="container">
         <div class="hero-card">
           <div class="hero-text">
-            <div class="hero-pill">💍 Wedding Catalog &amp; Design</div>
-            <h1>Selamat Datang di [Nama Brand]</h1>
+            <div class="hero-pill">💍 Wedding Catalog &amp; Design Studio</div>
+            <h1>Aurora Wedding Studio</h1>
             <p>
-              Solusi lengkap untuk mewujudkan pernikahan impianmu: dekorasi,
-              fotografi, busana, makeup, hingga catering dalam satu katalog.
+              Platform katalog untuk menampilkan layanan dekorasi, fotografi, busana, makeup,
+              dan catering pernikahan dengan tampilan profesional dan rapi.
             </p>
+            <p class="hero-subtext">
+              FULL SERVICE PLANNING • DEKORASI • DOKUMENTASI • CATERING
+            </p>
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <strong>Portofolio</strong>
+                <span>Contoh katalog wedding modern</span>
+              </div>
+              <div class="hero-meta-item">
+                <strong>Mobile First</strong>
+                <span>Optimasi tampilan di smartphone</span>
+              </div>
+              <div class="hero-meta-item">
+                <strong>Practice</strong>
+                <span>Untuk keperluan tugas & latihan</span>
+              </div>
+            </div>
             <div class="hero-ctas">
               <button class="btn-primary" onclick="document.getElementById('kategori').scrollIntoView({behavior:'smooth'})">
                 Lihat Katalog
               </button>
               <button class="btn-ghost" onclick="document.getElementById('kontak').scrollIntoView({behavior:'smooth'})">
-                Konsultasi Gratis
+                Simulasi Konsultasi
               </button>
             </div>
           </div>
           <div class="hero-media">
-            <div class="hero-banner-placeholder" aria-label="Foto wedding elegan"></div>
+            <div class="hero-banner-placeholder" aria-label="Foto wedding profesional"></div>
             <div class="hero-badge">
-              ✨ +100 Pasangan Puas &bull; Full Service
+              ✨ Contoh interface katalog wedding profesional
             </div>
           </div>
         </div>
@@ -828,7 +865,7 @@
           <a href="#catering" class="category-card">
             <div class="category-icon">🍽️</div>
             <div class="category-title">Catering</div>
-            <div class="category-text">Menu tradisional hingga premium.</div>
+            <div class="category-text">Menu tradisional hingga modern.</div>
           </a>
         </div>
       </div>
@@ -842,7 +879,7 @@
             <h2 class="section-title">Fotografi &amp; Videografi</h2>
             <p class="section-subtitle">Abadikan setiap momen sakral dengan indah.</p>
           </div>
-          <a href="#paket" class="section-link">Lihat paket &raquo;</a>
+          <span class="section-link">Contoh paket dokumentasi</span>
         </div>
 
         <div class="scroll-row">
@@ -851,7 +888,7 @@
             <div class="gallery-body">
               <div class="badge">Full Day</div>
               <div class="gallery-title">Akad &amp; Resepsi Indoor</div>
-              <div class="gallery-text">2 fotografer + 1 videografer, highlight video 3 menit.</div>
+              <div class="gallery-text">2 fotografer + 1 videografer, highlight video singkat.</div>
             </div>
           </div>
           <div class="gallery-card">
@@ -898,7 +935,6 @@
             <div class="grid-body">
               <div class="gallery-title">Rustic Minimalis</div>
               <p class="gallery-text">Nuansa kayu, lampu warm, dan bunga kering.</p>
-              <div class="price">Mulai dari Rp15.000.000</div>
             </div>
           </div>
           <div class="grid-card">
@@ -906,7 +942,6 @@
             <div class="grid-body">
               <div class="gallery-title">Elegant Classic</div>
               <p class="gallery-text">Warna putih gold dengan bunga fresh premium.</p>
-              <div class="price">Mulai dari Rp20.000.000</div>
             </div>
           </div>
           <div class="grid-card">
@@ -914,7 +949,6 @@
             <div class="grid-body">
               <div class="gallery-title">Garden Party</div>
               <p class="gallery-text">Outdoor dengan rumput hijau dan canopy light.</p>
-              <div class="price">Mulai dari Rp18.000.000</div>
             </div>
           </div>
           <div class="grid-card">
@@ -922,7 +956,6 @@
             <div class="grid-body">
               <div class="gallery-title">Modern Chic</div>
               <p class="gallery-text">Backdrop clean dengan kombinasi pastel soft.</p>
-              <div class="price">Mulai dari Rp17.000.000</div>
             </div>
           </div>
         </div>
@@ -939,16 +972,14 @@
           </div>
         </div>
 
-        <!-- Filter sederhana (visual saja) -->
         <div class="pill-row" style="margin-bottom:8px;">
           <div class="pill">Pengantin Pria</div>
           <div class="pill">Pengantin Wanita</div>
           <div class="pill">Couple Set</div>
         </div>
 
-        <!-- Busana Pengantin (10 foto, contoh sebagian) -->
+        <!-- Busana Pengantin (contoh sebagian, bisa ditambah sampai 10) -->
         <div class="grid-2">
-          <!-- Ulangi pola ini hingga 10 outfit -->
           <div class="grid-card">
             <img src="https://via.placeholder.com/400x500?text=Gaun+1" alt="Gaun pengantin 1" />
             <div class="grid-body">
@@ -977,7 +1008,7 @@
               <p class="gallery-text">Potongan slim fit warna navy elegan.</p>
             </div>
           </div>
-          <!-- Tambah lagi sampai 10 sesuai kebutuhanmu -->
+          <!-- Tambah lagi sampai 10 sesuai kebutuhan tugas -->
         </div>
 
         <!-- Makeup Pengantin (4 foto) -->
@@ -1041,7 +1072,6 @@
                 <li>Aneka lauk khas daerah</li>
                 <li>Gorengan &amp; jajanan pasar</li>
               </ul>
-              <div class="price">Mulai dari Rp60.000 / pax</div>
             </div>
           </div>
 
@@ -1054,7 +1084,6 @@
                 <li>Live cooking corner</li>
                 <li>Dessert table minimalis</li>
               </ul>
-              <div class="price">Mulai dari Rp85.000 / pax</div>
             </div>
           </div>
 
@@ -1063,11 +1092,10 @@
             <div class="grid-body">
               <div class="gallery-title">Paket Prasmanan</div>
               <ul class="menu-list">
-                <li>Pilihan 4 lauk utama</li>
+                <li>Pilihan beberapa lauk utama</li>
                 <li>Sayur, sambal, kerupuk</li>
                 <li>Free minuman refill</li>
               </ul>
-              <div class="price">Mulai dari Rp70.000 / pax</div>
             </div>
           </div>
 
@@ -1080,7 +1108,6 @@
                 <li>Live cooking &amp; dessert eksklusif</li>
                 <li>Set up meja VIP khusus keluarga</li>
               </ul>
-              <div class="price">Mulai dari Rp120.000 / pax</div>
             </div>
           </div>
         </div>
@@ -1093,43 +1120,40 @@
         <div class="section-header">
           <div>
             <h2 class="section-title">Paket Wedding</h2>
-            <p class="section-subtitle">Lebih hemat dengan paket all-in-one.</p>
+            <p class="section-subtitle">Contoh struktur paket tanpa detail harga.</p>
           </div>
         </div>
 
         <div class="paket-row">
           <div class="paket-card">
             <div class="paket-name">Paket Silver</div>
-            <div class="paket-price">Mulai dari Rp45.000.000</div>
             <ul class="paket-items">
               <li>Dekorasi basic (pelaminan + photobooth)</li>
               <li>1 pasang busana pengantin + MUA</li>
               <li>Fotografi &amp; videografi full day</li>
-              <li>Catering 300 pax (prasmanan)</li>
+              <li>Catering dengan jumlah tamu standar</li>
             </ul>
           </div>
 
           <div class="paket-card">
-            <div class="paket-label">Paling Favorit</div>
+            <div class="paket-label">Contoh Paket Populer</div>
             <div class="paket-name">Paket Gold</div>
-            <div class="paket-price">Mulai dari Rp65.000.000</div>
             <ul class="paket-items">
               <li>Dekorasi elegant classic</li>
               <li>2 pasang busana pengantin + MUA</li>
               <li>Fotografi &amp; videografi premium</li>
-              <li>Catering 500 pax + dessert corner</li>
+              <li>Catering dengan tambahan dessert corner</li>
             </ul>
           </div>
 
           <div class="paket-card">
             <div class="paket-label">Full Service</div>
             <div class="paket-name">Paket Diamond</div>
-            <div class="paket-price">Mulai dari Rp95.000.000</div>
             <ul class="paket-items">
               <li>Dekorasi custom konsep</li>
               <li>Busana &amp; MUA pengantin + keluarga inti</li>
               <li>Fotografi, videografi, dan live TV</li>
-              <li>Catering 800 pax + VIP family table</li>
+              <li>Catering dengan kapasitas tamu besar</li>
             </ul>
           </div>
         </div>
@@ -1142,7 +1166,7 @@
         <div class="section-header">
           <div>
             <h2 class="section-title">Vendor Kami</h2>
-            <p class="section-subtitle">Bekerja sama dengan vendor terpercaya.</p>
+            <p class="section-subtitle">Bekerja sama dengan vendor terpercaya (simulasi).</p>
           </div>
         </div>
         <div class="vendor-row">
@@ -1161,7 +1185,7 @@
         <div class="section-header">
           <div>
             <h2 class="section-title">Galeri</h2>
-            <p class="section-subtitle">Beberapa dokumentasi pernikahan klien kami.</p>
+            <p class="section-subtitle">Contoh dokumentasi pernikahan.</p>
           </div>
         </div>
 
@@ -1197,7 +1221,7 @@
         <div class="section-header">
           <div>
             <h2 class="section-title">Testimoni</h2>
-            <p class="section-subtitle">Cerita dari pasangan yang pernah kami dampingi.</p>
+            <p class="section-subtitle">Contoh testimoni dari klien (dummy).</p>
           </div>
         </div>
 
@@ -1206,24 +1230,21 @@
             <div class="testi-name">Rina &amp; Fajar</div>
             <div class="testi-meta">Akad &amp; resepsi, Jakarta</div>
             <p>
-              "Timnya ramah banget, dekorasi sesuai banget sama moodboard yang
-              aku kirim. Foto dan videonya juga super cantik!"
+              "Tampilan katalog seperti ini memudahkan kami memilih dekorasi dan paket tanpa bingung."
             </p>
           </div>
           <div class="testi-card">
             <div class="testi-name">Dewi &amp; Arif</div>
             <div class="testi-meta">Garden party, Bogor</div>
             <p>
-              "Semua tamu bilang makanannya enak dan dekorasinya cozy. Aku dan
-              suami tinggal datang dan menikmati hari itu."
+              "Struktur informasinya jelas, sehingga proses konsultasi lebih terarah."
             </p>
           </div>
           <div class="testi-card">
             <div class="testi-name">Siti &amp; Adi</div>
             <div class="testi-meta">Pernikahan adat, Bandung</div>
             <p>
-              "MUA-nya paham banget soal adat. Hasil makeup tetap terlihat fresh
-              di foto dan real life."
+              "Katalog ini bisa jadi referensi UI/UX untuk website wedding organizer profesional."
             </p>
           </div>
         </div>
@@ -1235,19 +1256,18 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <h2 class="section-title">Tentang Kami</h2>
+            <h2 class="section-title">Tentang Website Ini</h2>
           </div>
         </div>
         <div class="about-card">
           <p>
-            [Nama Brand] Wedding adalah tim wedding organizer dan vendor
-            pilihan yang fokus pada pengalaman pernikahan yang hangat,
-            terkonsep, dan minim ribet. Kami membantu dari tahap konsultasi,
-            konsep desain, hingga hari H.
+            Halaman ini dirancang sebagai contoh <strong>website katalog wedding</strong>
+            dengan pendekatan desain modern dan fokus tampilan mobile.
           </p>
           <p style="margin-top:6px;">
-            Kamu bisa memilih layanan satuan (dekorasi saja, foto saja, dll) atau
-            paket lengkap sesuai kebutuhan dan budget.
+            Struktur konten meliputi banner profesional, kategori utama, galeri visual,
+            paket layanan, hingga informasi kontak. Seluruh data harga dan transaksi
+            sengaja tidak dicantumkan karena digunakan untuk <strong>latihan/tugas praktik</strong>.
           </p>
         </div>
       </div>
@@ -1258,40 +1278,39 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <h2 class="section-title">FAQ</h2>
-            <p class="section-subtitle">Pertanyaan yang sering diajukan.</p>
+            <h2 class="section-title">FAQ (Simulasi)</h2>
+            <p class="section-subtitle">Pertanyaan yang sering diajukan (contoh).</p>
           </div>
         </div>
 
         <div class="faq-item">
           <div class="faq-question">
-            <span>Apakah paket bisa dicustom sesuai budget?</span>
+            <span>Apakah paket bisa dicustom sesuai kebutuhan?</span>
             <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
-            Ya, kami bisa menyesuaikan paket dengan prioritasmu: dekorasi,
-            dokumentasi, catering, atau lainnya. Konsultasi awal tidak
-            dipungut biaya.
+            Ya, pada implementasi nyata paket dapat disesuaikan dengan prioritas klien:
+            dekorasi, dokumentasi, catering, atau layanan lainnya.
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-question">
-            <span>Berapa minimal DP untuk booking tanggal?</span>
+            <span>Bagaimana cara menampilkan detail harga?</span>
             <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
-            Minimal DP 30% dari total paket untuk mengunci tanggal. Pelunasan
-            bisa dicicil hingga maksimal H-7.
+            Untuk keperluan tugas, bagian harga bisa ditambahkan sebagai teks atau tabel
+            terpisah, atau cukup berupa keterangan "harga by request" agar tetap rapi.
           </div>
         </div>
         <div class="faq-item">
           <div class="faq-question">
-            <span>Area mana saja yang bisa kami jangkau?</span>
+            <span>Apakah desain ini bisa dikembangkan lagi?</span>
             <span class="faq-toggle">+</span>
           </div>
           <div class="faq-answer">
-            Saat ini kami melayani area Jabodetabek dan sekitarnya. Untuk luar
-            kota bisa didiskusikan dengan biaya tambahan transportasi.
+            Sangat bisa. Kamu dapat menambahkan halaman detail tiap kategori, form
+            pemesanan, atau integrasi dengan WhatsApp dan email.
           </div>
         </div>
       </div>
@@ -1302,8 +1321,8 @@
       <div class="container">
         <div class="section-header">
           <div>
-            <h2 class="section-title">Kontak &amp; Konsultasi</h2>
-            <p class="section-subtitle">Cerita dulu tentang rencana pernikahanmu.</p>
+            <h2 class="section-title">Kontak &amp; Konsultasi (Dummy)</h2>
+            <p class="section-subtitle">Bagian ini bisa diisi data asli saat digunakan produksi.</p>
           </div>
         </div>
 
@@ -1326,8 +1345,8 @@
           </div>
 
           <div class="contact-actions">
-            <button class="btn-outline">Chat via WhatsApp</button>
-            <button class="btn-outline">Konsultasi Online</button>
+            <button class="btn-outline">Simulasi Chat WA</button>
+            <button class="btn-outline">Simulasi Konsultasi Online</button>
           </div>
         </div>
       </div>
@@ -1337,13 +1356,13 @@
   <!-- FLOATING CTA -->
   <div class="floating-cta">
     <button class="floating-btn">
-      <span>💬</span> Chat Wedding Planner
+      <span>💬</span> Simulasi Chat Planner
     </button>
   </div>
 
   <!-- FOOTER -->
   <footer>
-    <div>&copy; <span id="year"></span> [Nama Brand] Wedding. All rights reserved.</div>
+    <div>&copy; <span id="year"></span> Aurora Wedding Studio (Demo). Layout untuk tugas & latihan.</div>
     <div class="footer-links">
       <a href="#tentang">Tentang</a>
       <a href="#paket">Paket</a>
@@ -1352,7 +1371,6 @@
   </footer>
 
   <script>
-    // Toggle mobile nav
     const menuToggle = document.getElementById("menuToggle");
     const mobileNav = document.getElementById("mobileNav");
 
@@ -1361,7 +1379,6 @@
       mobileNav.classList.toggle("active");
     });
 
-    // Close nav on link click (mobile)
     mobileNav.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
         menuToggle.classList.remove("active");
@@ -1369,14 +1386,12 @@
       });
     });
 
-    // FAQ accordion
     document.querySelectorAll(".faq-item").forEach((item) => {
       item.querySelector(".faq-question").addEventListener("click", () => {
         item.classList.toggle("active");
       });
     });
 
-    // Tahun di footer
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
